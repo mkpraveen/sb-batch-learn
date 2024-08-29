@@ -2,3 +2,13 @@ spring:
   application:
     name: sb-batch-learn-one
 
+  kafka:
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+
+    template:
+      default-topic: transaction-topic 
+    
+              
+
